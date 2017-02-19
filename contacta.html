@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <title>Home | Website Name</title>
+    <title>Contacta | Sala3</title>
 
     <meta charset="UTF-8"/>
     <meta name="description" content="">
@@ -27,7 +27,7 @@
 
 <body>
 <header id="header">
-    <h1>Website Name</h1>
+    <h1>Sala3</h1>
 </header>
 
 <nav id="navbar">
@@ -40,19 +40,57 @@
 
 <div id="content">
     <div id="pageTitle">
-        <h1>Page Name</h1>
+        <h1>Contacta</h1>
     </div>
     <div id="pageContent">
         <section>
             <article>
-                <p>Somthing to tell</p>
+                <p>Envia'ns el teu comentari!</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Dades de l'usuari</legend>
+                        <div>
+                            <label for="name">Nom *</label>
+                            <input id="name" type="text" placeholder="Nom i cognoms" required>
+                        </div>
+                        <div>
+                            <label for="email">Correu electrònic *</label>
+                            <input id="email" type="email" placeholder="exemple@gmail.com" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Comenari</legend>
+                        <div>
+                            <label for="score">Puntua'ns</label>
+                            <div id="score">
+                                <input type="radio" id="score_1">
+                                <label for="score_1">1</label>
+                                <input type="radio" id="score_2">
+                                <label for="score_2">2</label>
+                                <input type="radio" id="score_3">
+                                <label for="score_3">3</label>
+                                <input type="radio" id="score_4">
+                                <label for="score_4">4</label>
+                                <input type="radio" id="score_5">
+                                <label for="score_5">5</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="comment">Comentari:</label><br>
+                            <input type="text" id="comment">
+                        </div>
+                    </fieldset>
+
+
+                </form>
             </article>
         </section>
     </div>
 </div>
 
 <footer id="footer">
-    Oscar Oliver &copy; 2017
+    Aaron Castells & Oscar Oliver &copy; 2017
 </footer>
 </body>
 </html>

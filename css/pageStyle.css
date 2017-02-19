@@ -1,2 +1,7 @@
 /* Created by Oscar Oliver */
 
+section#trailers article{
+    display: inherit;
+    margin: 0 auto;
+    width: 40%;
+}

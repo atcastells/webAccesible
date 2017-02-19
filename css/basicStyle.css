@@ -1,0 +1,88 @@
+/* Created by Oscar Oliver */
+
+/***** WEB COLORS *****/
+:root {
+    /* Web palette */
+    --main-color: #e69932;
+    --secundary-color: #6a4721;
+    --compl_main-color: #1966cd;
+    --compl_secundary-color: #112233;
+
+    --greyscale-black: black;
+    --greyscale-dark: #555555;
+    --greyscale-middle: #888888;
+    --greyscale-light: #aaaaaa;
+    --greyscale-white: white;
+
+    /* Sections colors */
+    --page-bg-color: transparent;
+    --page-text-color: black;
+
+    --header-bg-color: white;
+    --header-text-color: var(--main-color);
+
+    --navbar-bg-color: var(--compl_secundary-color);
+    --navbar-link-color: var(--greyscale-white);
+    --navbar-hover-color: var(--main-color);
+
+    --footer-bg-color: var(--greyscale-light);
+    --footer-border-color: var(--main-color);
+
+    --a_link-color: var(--compl_secundary-color);
+    --a_visited-color: var(--compl_secundary-color);
+    --a_hover-color: var(--main-color);
+    --a_active-color: var(--main-color);
+}
+
+/***** BASIC STYLES *****/
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6rem;           /* Space between content and footer (footer height + desired space) */
+    background-color: var(--page-bg-color);
+    color: var(--page-text-color);
+    font-family: 'Arial', serif;    /* Default font */
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--a_link-color);
+}
+
+a:visited {
+    color: var(--a_visited-color);
+}
+
+a:hover {
+    color: var(--a_hover-color);
+}
+
+a:active {
+    color: var(--a_active-color);
+}
+

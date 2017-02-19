@@ -1,0 +1,83 @@
+/* Created by Oscar Oliver */
+
+/* HEADER */
+#header{
+    width: 100%;
+    height: 80px;
+    padding: 1px;
+    margin: 0 auto 5px;
+    background: var(--header-bg-color);
+    vertical-align: middle;
+}
+
+#header h1{
+    color: var(--header-text-color);
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+}
+
+
+/* NAV BAR */
+#navbar {
+    background-color: var(--navbar-bg-color);
+    text-align: center;
+    padding: 0;
+    margin: 0 0 5px;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar li {
+    display: inline-block;
+    position: relative;
+    width: inherit;
+}
+
+#navbar li:hover a {
+    color: var(--navbar-hover-color);
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;     /* Per a que el link agafe l'espai del seu pare*/
+    padding:10px;
+    color: var(--navbar-link-color);
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+#navbar a.active {
+    font-weight: bold;
+    color: var(--navbar-hover-color);
+}
+
+
+/* CONTENT */
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pageTitle {
+    border-bottom: 1px solid var(--greyscale-dark);
+    margin-bottom: 20px;
+}
+
+#pageContent {
+    font-family: 'Arial', serif;
+}
+
+
+/* FOOTER */
+#footer {
+    padding: 1rem;
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid var(--footer-border-color);
+    background-color: var(--footer-bg-color);
+}

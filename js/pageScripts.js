@@ -11,6 +11,11 @@ $(document).ready(function(){
         else {
             $("div.transcription").fadeOut();
         }
-    })
+    });
+
+    $('#comment').keyup(function () {
+        var count = $(this).val().trim().length;
+        $("#commentCount").text(count + '/300');
+    });
 });
 

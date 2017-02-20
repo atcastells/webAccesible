@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <title>Home | Website Name</title>
+    <title>Contacta | Sala3</title>
 
     <meta charset="UTF-8"/>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Oscar Oliver">
+    <meta name="description" content="Sala3 és un punt d'unió per a tots els cinèfils on es poden trobar les últimes novetats.">
+    <meta name="keywords" content="sala3,sala 3,cinema,pel·licules,contacta">
+    <meta name="author" content="Oscar Oliver, Aaron Castells">
 
     <!-- CSS's  -->
     <link rel="stylesheet" type="text/css" href="css/basicStyle.css">
@@ -27,32 +27,72 @@
 
 <body>
 <header id="header">
-    <h1>Website Name</h1>
+    <h1>Sala3</h1>
 </header>
 
 <nav id="navbar">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="trailers.html">Trailers</a></li>
-        <li><a href="contacta.html">Contact</a></li>
+        <li><a href="contacta.html">Contacta</a></li>
     </ul>
 </nav>
 
 <div id="content">
     <div id="pageTitle">
-        <h1>Page Name</h1>
+        <h1>Contacta</h1>
     </div>
     <div id="pageContent">
         <section>
             <article>
-                <p>Somthing to tell</p>
+                <p>Envia'ns el teu comentari!</p>
+                <form id="contactForm" class="form" action="#" method="post">
+                    <fieldset>
+                        <legend>Dades de l'usuari</legend>
+                        <div class="labelInputInOneLine">
+                            <label for="name">Nom *</label>
+                            <input id="name" type="text" placeholder="Nom i cognoms" required>
+                        </div>
+                        <div class="labelInputInOneLine">
+                            <label for="email">Correu electrònic *</label>
+                            <input id="email" type="email" placeholder="exemple@gmail.com" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Comentari</legend>
+                        <div>
+                            <label for="score">Puntua'ns:</label>
+                            <div id="score" class="inlineRadioButtons">
+                                <input type="radio" id="score_1" value="1">
+                                <label for="score_1">1</label>
+                                <input type="radio" id="score_2" value="2">
+                                <label for="score_2">2</label>
+                                <input type="radio" id="score_3" value="3">
+                                <label for="score_3">3</label>
+                                <input type="radio" id="score_4" value="4">
+                                <label for="score_4">4</label>
+                                <input type="radio" id="score_5" value="5">
+                                <label for="score_5">5</label>
+                            </div>
+                        </div>
+                        <div class="labelInputInTwoLine">
+                            <label for="comment">Comentari:</label>
+                            <textarea id="comment" placeholder="Escriu el teu comentari..." maxlength="511"></textarea>
+                        </div>
+                    </fieldset>
+                    <label for="contactForm">* Camps obligatoris</label>
+                    <div>
+                        <input type="submit" class="colorRoundedButton">
+                    </div>
+                </form>
             </article>
         </section>
     </div>
 </div>
 
 <footer id="footer">
-    Oscar Oliver &copy; 2017
+    Aaron Castells & Oscar Oliver &copy; 2017
 </footer>
 </body>
 </html>

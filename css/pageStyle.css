@@ -33,4 +33,9 @@
 
 .inlineRadioButtons label{
     margin-right: 15px;
+
+section#trailers article{
+    display: inherit;
+    margin: 0 auto;
+    width: 40%;
 }

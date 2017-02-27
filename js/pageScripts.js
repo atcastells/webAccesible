@@ -14,8 +14,15 @@ $(document).ready(function(){
     });
 
     $('#comment').keyup(function () {
-        var count = $(this).val().trim().length;
-        $("#commentCount").text(count + '/300');
+        var count = $(this).val().length;
+        var commentCount = $("#commentCount");
+        commentCount.text(count + '/300');
+        if (parseInt(count) >= 300) {
+            commentCount.css("color", "#FF0000");
+        }
+        else {
+            commentCount.css("color", "#888");
+        }
     });
 });
 

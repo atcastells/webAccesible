@@ -24,5 +24,18 @@ $(document).ready(function(){
             commentCount.css("color", "#888");
         }
     });
+
+    $(document).idleTimer(10 * 1000);
+
+    $(document).on( "idle.idleTimer", function(event, elem, obj){
+        alert("You are idle.")
+    });
+
+    $(document).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+        $(document).idleTimer(10 * 1000);
+    });
 });
+
+
+
 

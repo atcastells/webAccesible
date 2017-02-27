@@ -1,5 +1,8 @@
 /* Created by Oscar Oliver */
 
+*:focus {
+    outline-color: blueviolet;
+}
 
 .form {
     width: 90%;
@@ -23,7 +26,7 @@
 }
 
 .labelInputInOneLine > label {
-    width: 150px;
+    width: 175px;
     float: left;
 }
 
@@ -43,4 +46,5 @@ section#trailers article{
 
 .darkHover a:hover {
     color: var(--compl_main-color);
+    font-weight: bold;
 }

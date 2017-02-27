@@ -40,3 +40,7 @@ section#trailers article{
     margin: 0 auto;
     width: 40%;
 }
+
+.darkHover a:hover {
+    color: var(--compl_main-color);
+}
